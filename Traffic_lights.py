@@ -21,7 +21,7 @@ def left_lane():
     GPIO.output(g1, GPIO.LOW) #Turn off green light
 
 #Define straight lane function
-def yellow_lights():
+def straight_lane():
     print("Waiting for traffic light to change")  #Prints the waiting for traffic light to change
     GPIO.output(y1, GPIO.HIGH)  #Turn on yellow light
     GPIO.output(y2, GPIO.HIGH)  #Turn on yellow light
@@ -51,6 +51,6 @@ GPIO.setup(g2, GPIO.OUT) #Set green light as output
 #Traffic light system in a loop
 while(True):
     right_lane()
-    yellow_lights()
+    straight_lane()
     left_lane()
-    yellow_lights()
+    straight_lane()
