@@ -19,7 +19,7 @@ def left_lane():
     time.sleep(delay)  #Delay for red & green light
     GPIO.output(r2, GPIO.LOW) #Turn off red light
     GPIO.output(g1, GPIO.LOW) #Turn off green light
-    
+
 #Define straight lane function
 def yellow_lights():
     print("Waiting for traffic light to change")  #Prints the waiting for traffic light to change
